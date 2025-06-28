@@ -1,0 +1,63 @@
+.acerca-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: url('/portada.png') center/cover no-repeat fixed;
+  color: #f5f5f5;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.acerca-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* oscurece el fondo */
+  backdrop-filter: blur(6px);     /* desenfoca el fondo */
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 0;
+}
+
+
+
+
+.acerca-content {
+    position: relative;
+  z-index: 1;
+  max-width: 800px;
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* soporte para Safari */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+  z-index: 1;
+}
+.acerca-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #6ec1e4;
+}
+
+.acerca-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.acerca-text strong {
+  color: #ffffff;
+}
+
+.acerca-text em {
+  color: #6ec1e4;
+  font-style: normal;
+  font-weight: bold;
+}

@@ -1,0 +1,114 @@
+.contacto-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 2rem;
+  background: black;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #f5f5f5;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+}
+
+.contacto-page::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(30, 30, 60, 0.65);
+  backdrop-filter: blur(8px);
+  z-index: 0;
+}
+
+.contacto-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 700px;
+  padding: 2rem;
+}
+
+.contacto-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 8px #333, 0 0 10px #6ec1e4;
+  margin-bottom: 0.5em;
+  letter-spacing: 2px;
+}
+
+.contacto-description {
+  font-size: 1.3rem;
+  color: #f0f0f0;
+  background: rgba(30, 30, 60, 0.7);
+  padding: 1em 2em;
+  border-radius: 12px;
+  margin-bottom: 2em;
+  max-width: 600px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+}
+
+.contacto-form {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #ddd;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
+textarea {
+  resize: none;
+}
+
+.form-submit-button {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #fff;
+  background: #6ec1e4;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-submit-button:hover {
+  background: #5ca8c2;
+}
